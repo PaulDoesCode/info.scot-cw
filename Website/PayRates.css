@@ -1,0 +1,95 @@
+.pageContainer {
+  height: 100vh;
+  margin-top: 25px;
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+#lineChart {
+  margin: 0 auto;
+  height: 600px;
+  width: 800px;
+}
+
+#SearchText {
+  text-align: center;
+}
+
+#SearchTextPhone {
+  clear: both;
+  display: none;
+  text-align: center;
+}
+
+/* For phone view */
+@media only screen
+and (max-device-width: 768px) and (max-device-height: 850px) {
+  #homeimage {
+    display: none;
+  }
+
+  #hometext {
+    display: none;
+  }
+
+  .pageContainer {
+    position: fixed;
+    height: 2000px;
+    margin-top: 25px;
+    margin-left: 0px;
+    width: 100vh;
+    background-color: black;
+    color: #FFFFFF;
+    display: block;
+    font-size: 15px;
+  }
+
+  #SearchText {
+    display: none;
+  }
+
+  #SearchTextPhone {
+    display: flex;
+    font-size: 10px;
+    margin-left: 100px;
+  }
+
+  #Search {
+    position: relative;
+    margin-top: -30px;
+    margin-left: 100px;
+    font-size: 10px;
+  }
+
+  #Search button {
+    height: 20px;
+    width: 50px;
+    font-size: 10px;
+  }
+
+  .MSPInfo img {
+    float: left;
+    clear: left;
+    margin-left: 30px;
+  }
+
+  .MSPInfo p {
+    float: left;
+    margin-left: 20px;
+  }
+
+  #lineChart {
+      height: 200px;
+      width: 400px;
+      clear: left;
+      margin-top: 30px;
+      margin-left: 0px;
+    }
+
+  .jobTable {
+    display:none;
+  }
+}

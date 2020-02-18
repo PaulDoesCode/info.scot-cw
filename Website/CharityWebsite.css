@@ -1,0 +1,119 @@
+h1 {
+  border-bottom: 5px solid black;
+  width: 495px;
+  margin: auto;
+  top: 0px;
+  z-index: 1;
+  text-align: center;
+  display: block;
+  color: #000000;
+}
+
+body {
+  background-color: #FF8C61;
+}
+
+#Search {
+  margin-left: 550px;
+}
+
+#hometext {
+  font-size: 50px;
+  color: #000000;
+  position: relative;
+  top: 250px;
+  left: 400px;
+}
+
+#homeimage {
+  float: right;
+  position: fixed;
+  right: 200px;
+}
+
+nav {
+  text-align: center;
+  color: #000000;
+}
+
+nav a {
+  color: #000000;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: all ease-in-out 225ms;
+}
+
+nav a:hover {
+  color: #000000;
+  border-bottom: 5px solid black;
+  text-decoration: none;
+}
+
+nav a.active {
+  border-bottom: 5px solid black;
+}
+
+button {
+  background-color: #FFFFFF;
+  border: none;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  width: 100px;
+}
+
+/* For phone view */
+@media only screen and (max-device-width: 768px) and (max-device-height: 850px) {
+  h1 {
+    border-bottom: 5px solid black;
+    width: 250px;
+    margin: auto;
+    top: 0px;
+    z-index: 1;
+    text-align: center;
+    display: block;
+    color: #000000;
+    font-size: 30px;
+  }
+
+  #SearchText {
+    margin-left: 50px;
+    font-size: 10px;
+  }
+
+  nav {
+    text-align: center;
+    color: #000000;
+  }
+
+  nav a {
+    font-size: 18px;
+    color: #000000;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all ease-in-out 225ms;
+  }
+
+  nav a:hover {
+    color: #000000;
+    border-bottom: 5px solid black;
+    text-decoration: none;
+  }
+
+  nav a.active {
+    border-bottom: 5px solid black;
+  }
+
+  #homeimage {
+    display: none;
+  }
+
+  #hometext {
+    display: none;
+  }
+}
+
+/* For tablet view */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {}

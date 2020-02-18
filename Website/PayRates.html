@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- Start of head code. -->
+<!-- Links to jQuery, Bootstrap, stylesheets, and Google Charts. -->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Job Details</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="CharityWebsite.css">
+  <link rel="stylesheet" href="PayRates.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="PayRateSearch.js"></script>
+</head>
+
+<!-- Start of body code. -->
+
+<body>
+
+  <!-- Site header. -->
+  <!-- Contains nav links. -->
+  <header>
+    <h1>
+      <div class=".siteHeading">
+        <img id = "siteLogo" src = "scotland.png">
+        inform.scot
+      </div>
+    </h1>
+    <nav>
+      <h3>
+        <a href="Home.html">home</a>
+        <a href="GeographicSearch.html">area search</a>
+        <a class="active" href="PayRates.html">occupation search</a>
+      </h3>
+    </nav>
+  </header>
+
+<div class = "pageContainer">
+  <!-- Search job container -->
+  <section>
+    </br>
+    </br>
+    <div id = "SearchText">
+      To search for information on a particular area of employment please enter a job title in the search bar below (you may have to click more than once).
+    </div>
+    <div id = "SearchTextPhone">
+      Enter a job title below to get started.
+    </div>
+    </br>
+    </br>
+    <div id = "Search">
+      <input type="text" placeholder="Enter Occupation" id="Occupation">
+      <button id="occupationSearch">
+        Search
+      </button>
+    </div>
+  </section>
+
+  <!-- Line chart container -->
+  <!-- The chart isn't 100% reliable and may require multiple clicks to display all four sets of data. -->
+  <!-- I believe this may either a loading issue, a Internet speed issue, or simply a browser issue. Sometimes it will work first time, other times it won't. -->
+  <div id="lineChart">
+  </div>
+</div>
+
+</body>
+
+</html>

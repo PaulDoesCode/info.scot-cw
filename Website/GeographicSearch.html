@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- Start of head code. -->
+<!-- Links to jQuery, Bootstrap, stylesheets, and Google Charts. -->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Area Search</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="CharityWebsite.css">
+  <link rel="stylesheet" href="GeographicSearch.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="MSPSearch.js"></script>
+</head>
+
+<!-- Start of body code. -->
+<body>
+
+  <!-- Website header with name of website and related nav links -->
+  <header>
+    <h1>
+      <div class="siteHeading">
+        <img id = "siteLogo" src = "scotland.png">
+        inform.scot
+      </div>
+    </h1>
+    <nav>
+      <h3>
+        <a href="Home.html">
+          home
+        </a>
+        <a class="active" href="GeographicSearch.html">
+          area search
+        </a>
+        <a href="PayRates.html">
+          occupation search
+        </a>
+      </h3>
+    </nav>
+  </header>
+
+  <div class="pageContainer">
+    <!-- Section with some instructive text and a search box with a search button -->
+    <!-- Used for searching by postcode -->
+    <section id = "AreaSearch">
+        </br>
+        </br>
+        <div id = "SearchText">
+          To search for employment statistics and MSP information for a particular area, please enter a postcode in the search bar below.
+          </br>
+          Scroll within this container to see additional information upon searching.
+        </div>
+        <div id = "SearchTextPhone">
+          Get started by entering a postcode below.
+        </div>
+        </br>
+        </br>
+        <div id = "Search">
+        <input type="text" placeholder="Enter Postcode" id="Postcode">
+        <button id="PostcodeSearch">
+          Search
+        </button>
+        </br>
+        </br>
+        </br>
+      </div>
+    </section>
+
+    <!-- Section displaying MSP information -->
+    <section class="MSPInfo">
+      <!-- MSP Photo -->
+      <img id="memberPhoto" src="">
+      </img>
+      <div id = "MSPDetails">
+        <!-- MSP Details (name, email address, party) -->
+        <p id="memberName">
+        </p>
+        <p id="memberEmail">
+          Email:
+        </p>
+        <p id="memberParty">
+          Party:
+        </p>
+    </div>
+    </section>
+
+    <!-- Column chart displaying job data -->
+    <section class="barChart">
+      <div id="barChart">
+      </div>
+      </br>
+    </section>
+
+    <section class="jobTable">
+      <div id=jobTableFilter>
+        <p>Scroll or type something in the search bar to filter the detailed breakdown table:</p>
+        <input id="jobInput" type="text" placeholder="Filter">
+        <!-- Table displaying a full comprehensive list of job data -->
+        <div id="scrollJobTable">
+          <table id="jobStatsTable">
+            <thead>
+              <tr>
+                <th>
+                  Area of Employment
+                </th>
+                <th>
+                  Number of Jobs Available
+                </th>
+              </tr>
+            </thead>
+            <tbody id="jobStatsTableBody">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</body>
+
+</html>
